@@ -1,20 +1,20 @@
-/*===== GOOGLE FONTS =====*/
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+/* Variable */
 :root{
   --header-height: 3rem;
   --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/* Color */
 :root{
-  --first-color: #4070F4;
-  --second-color: #0E2431;
+  --first-color: #3d3d3d;
+  --second-color: #010203;
 }
 
-/*===== Fuente y tipografia =====*/
+/* Font */
 :root{
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Filson', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -27,7 +27,7 @@
   }
 }
 
-/*===== Margenes =====*/
+/* Margin */
 :root{
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -37,7 +37,7 @@
   --mb-6: 3rem;
 }
 
-/*===== z index =====*/
+/* Index */
 :root{
   --z-back: -10;
   --z-normal: 1;
@@ -45,7 +45,7 @@
   --z-fixed: 100;
 }
 
-/*===== BASE =====*/
+/* Base */
 *,::before,::after{
   box-sizing: border-box;
 }
@@ -75,7 +75,7 @@ img{
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+/* CSS */
 .section-title{
   position: relative;
   font-size: var(--h2-font-size);
@@ -100,7 +100,7 @@ img{
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+/* Layout */
 .bd-grid{
   max-width: 1024px;
   display: grid;
@@ -120,7 +120,7 @@ img{
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
-/*===== NAV =====*/
+/* Navigation */
 .nav{
   height: var(--header-height);
   display: flex;
@@ -179,48 +179,29 @@ img{
   background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
+/* Menu */
 .show{
   right: 0;
 }
 
-/*===== HOME =====*/
+/* Home */
 .home{
   height: calc(100vh - 3rem);
   row-gap: 1rem;
 }
-.home__data{
-  align-self: center;
-}
-.home__title{
-  font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
-}
-.home__title-color{
-  color: var(--first-color);
-}
-.home__social{
-  display: flex;
-  flex-direction: column;
-}
-.home__social-icon{
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: var(--second-color);
-}
-.home__social-icon:hover{
-  color: var(--first-color);
-}
 .home__img{
+  align-self: center;
+  justify-self: center;
   position: static;
   right: 0;
   bottom: 0;
   width: 295px;
 }
 
-/*BUTTONS*/
+/* Buttons */
 .button{
+  align-self: center;
+  justify-self: center;
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -232,13 +213,10 @@ img{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
-/* ===== ABOUT =====*/
+/* About */
 .about__container{
   row-gap: 2rem;
   text-align: center;
-}
-.about__subtitle{
-  margin-bottom: var(--mb-2);
 }
 .about__img{
   justify-self: center;
@@ -248,7 +226,7 @@ img{
   border-radius: .5rem;
 }
 
-/* ===== WORK =====*/
+/* Products */
 .work__container{
   row-gap: 2rem;
 }
@@ -265,7 +243,7 @@ img{
   transform: scale(1.1);
 }
 
-/* ===== FOOTER =====*/
+/* Footer */
 .footer{
   background-color: var(--second-color);
   color: #fff;
@@ -324,25 +302,12 @@ img{
   .home{
     height: 100vh;
   }
-  .home__data{
-    align-self: flex-end;
-  }
-  .home__social{
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    flex-direction: row;
-    align-self: flex-end;
-  }
-  .home__social-icon{
-    margin-bottom: 0;
-    margin-right: var(--mb-4);
-  }
   .home__img{
     width: 457px;
     bottom: 15%;
   }
 
-  .about__container, .skills__container{
+  .about__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: initial;
@@ -354,12 +319,6 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
-  }
-  .contact__form{
-    width: 360px;
-  }
-  .contact__container{
-    justify-items: center;
   }
 }
 

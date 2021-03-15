@@ -1,4 +1,4 @@
-/*===== MENU SHOW =====*/ 
+/* Show Menu */
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -11,7 +11,7 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/*===== ACTIVE AND REMOVE MENU =====*/
+/* Menu */
 const navLink = document.querySelectorAll('.nav__link');   
 
 function linkAction(){
@@ -25,7 +25,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*===== SCROLL REVEAL ANIMATION =====*/
+/* Scroll Animation */
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
@@ -33,18 +33,18 @@ const sr = ScrollReveal({
     reset: true
 });
 
-/*SCROLL HOME*/
+/* Home */
 sr.reveal('.home__title',{}); 
 sr.reveal('.button',{delay: 200}); 
 sr.reveal('.home__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 
-/*SCROLL ABOUT*/
+/* About */
 sr.reveal('.about__img',{}); 
 sr.reveal('.about__subtitle',{delay: 400}); 
 sr.reveal('.about__text',{delay: 400}); 
 
-/*SCROLL WORK*/
+/* Products */
 sr.reveal('.work__img',{interval: 200});
 
 
