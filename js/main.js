@@ -45,7 +45,7 @@ sr.reveal('.about__subtitle',{delay: 400});
 sr.reveal('.about__text',{delay: 400}); 
 
 /* Products */
-sr.reveal('.work__img',{interval: 200});
+sr.reveal('.products__img',{interval: 200});
 
 
 

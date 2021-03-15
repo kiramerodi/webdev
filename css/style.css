@@ -1,5 +1,3 @@
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /* Variable */
 :root{
   --header-height: 3rem;
@@ -202,7 +200,6 @@ img{
 .button{
   align-self: center;
   justify-self: center;
-  display: inline-block;
   background-color: var(--first-color);
   color: #fff;
   padding: .75rem 2.5rem;
@@ -227,19 +224,19 @@ img{
 }
 
 /* Products */
-.work__container{
+.products__container{
   row-gap: 2rem;
 }
-.work__img{
+.products__img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .5rem;
   overflow: hidden;
 }
-.work__img img{
+.products__img img{
   transition: 1s;
   cursor: pointer;
 }
-.work__img img:hover{
+.products__img img:hover{
   transform: scale(1.1);
 }
 
@@ -250,10 +247,6 @@ img{
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
-}
-.footer__title{
-  font-size: 2rem;
-  margin-bottom: var(--mb-4);
 }
 .footer__social{
   margin-bottom: var(--mb-4);
@@ -315,7 +308,7 @@ img{
   .about__img img{
     width: 300px;
   }
-  .work__container{
+  .products__container{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
