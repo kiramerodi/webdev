@@ -198,8 +198,7 @@ img{
 
 /* Buttons */
 .button{
-  align-self: center;
-  justify-self: center;
+  display: inline-block;
   background-color: var(--first-color);
   color: #fff;
   padding: .75rem 2.5rem;
@@ -324,3 +323,14 @@ img{
     right: 10%;
   }
 }
+
+
+
+
+
+/* 
+
+Citation:
+Bedimcode (2020) Website HTML CSS JS [Source code]. https://github.com/bedimcode
+
+*/

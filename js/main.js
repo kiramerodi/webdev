@@ -50,3 +50,11 @@ sr.reveal('.products__img',{interval: 200});
 
 
 
+
+/* 
+
+Citation:
+Bedimcode (2020) Website HTML CSS JS [Source code]. https://github.com/bedimcode
+
+*/
+
